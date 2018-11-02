@@ -1,9 +1,3 @@
-@media (min-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-
 body {
   font-family: 'Oswald', sans-serif;
   color: #250048;
@@ -18,8 +12,15 @@ a {
   padding: 0
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
 .header,
-.main {
+.main,
+.about {
   border-bottom: 1px solid #E1E1E1;
 }
 
@@ -36,10 +37,14 @@ a {
   top: 6px;
 }
 
+.main,
+.about {
+  box-shadow: 0 6px 6px 1px #DCDCDC;
+}
+
 .main {
   background: url(main_bg.png) no-repeat center;
   background-color: #EFEFEF;
-  box-shadow: 0 6px 6px 1px #DCDCDC;
 }
 
 .main .row {
@@ -63,4 +68,26 @@ a {
 
 .main i {
   margin: 50px 5px;
+}
+
+.about {
+  padding: 100px 0px;
+}
+
+.about .col-md-5,
+.about .col-2 {
+  padding: 50px 0px;
+}
+
+.about .col-md-5 p {
+  margin: 0 auto;
+}
+
+.line {
+  width: 1px;
+  height: 300px;
+  background-color: #E1E1E1;
+  position: absolute;
+  left: 50%;
+  right: 50%;
 }

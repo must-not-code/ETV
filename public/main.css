@@ -14,7 +14,7 @@ a {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 970px;
+    max-width: 960px;
   }
 }
 
@@ -25,7 +25,7 @@ a {
 }
 
 .header img {
-  margin: 10px 100px 10px 10px;
+  margin: 10px 10% 10px 10px;
 }
 
 .header i {
@@ -42,13 +42,19 @@ a {
   box-shadow: 0 6px 6px 1px #DCDCDC;
 }
 
-.main {
-  background: url(main_bg.png) no-repeat center;
-  background-color: #EFEFEF;
+@media (min-width: 768px) {
+  .main {
+    background: url(main_bg.png) no-repeat center;
+    background-color: #EFEFEF;
+  }
 }
 
 .main .row {
-  padding: 100px 0px;
+  padding-top: 100px;
+}
+
+.main .col-md-6 {
+  margin-bottom: 100px;
 }
 
 .main h1 {

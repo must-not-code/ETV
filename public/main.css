@@ -162,12 +162,16 @@ h1, h2 {
   margin: 10px 20px;
 }
 
-.contacts .col-4 {
+.contacts .col-auto {
   height: 60px;
+  width: 300px;
+  margin: 20px 0px;
 }
 
-.contacts .col-4:not(:last-child) {
-  border-right: 1px solid #E1E1E1;
+@media (min-width: 992px) {
+  .contacts .col-auto:not(:last-child) {
+    border-right: 1px solid #E1E1E1;
+  }
 }
 
 .contacts a {

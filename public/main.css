@@ -28,11 +28,13 @@ h1, h2 {
   border-bottom: 1px solid #E1E1E1;
 }
 
-.header img {
+.header img,
+.footer img {
   margin: 10px 10% 10px 10px;
 }
 
-.header i {
+.header i,
+.footer i {
   font-size: 1.2em;
   color: #250048;
   margin: 10px;
@@ -93,31 +95,26 @@ h1, h2 {
   margin-top: 50px;
 }
 
-.about .col-md-5,
-.about .col-2 {
+.about .col-md-6 {
   padding: 50px 0px;
+}
+
+@media (min-width: 768px) {
+  .about .col-md-6:nth-child(odd) {
+    border-right: 1px solid #E1E1E1;
+  }
 }
 
 .left {
   text-align: left;
   margin: 0 auto 0 25px;
+  padding-right: 100px;
 }
 
 .right {
   text-align: right;
   margin: 0 25px 0 auto;
-}
-
-.line {
-  width: 1px;
-  height: 300px;
-  background-color: #E1E1E1;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-}
-
-.show {
+  padding-left: 100px;
 }
 
 .show .container {
@@ -144,5 +141,44 @@ h1, h2 {
 }
 
 .show .text {
-  padding: 50px;
+  padding: 10px 50px;
+}
+
+.contacts {
+  padding: 100px 0px;
+  background: url(contacts_bg.png) no-repeat center;
+}
+
+.contacts .row {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.contacts img {
+  margin: 50px;
+}
+
+.contacts .row img {
+  margin: 10px 20px;
+}
+
+.contacts .col-4 {
+  height: 60px;
+}
+
+.contacts .col-4:not(:last-child) {
+  border-right: 1px solid #E1E1E1;
+}
+
+.contacts a {
+  position: absolute;
+  bottom: 0px;
+}
+
+.mail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+}
+
+.footer {
+  background-color: #E1E1E1;
 }

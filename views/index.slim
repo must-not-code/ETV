@@ -32,7 +32,7 @@ html
               h2 Единственный
               h2 Киберспортивный
           p Единственный телеканал об игровой индустрии и киберспорте в России и странах СНГ. Уникальный контент и самые свежие новости о видеоиграх и киберспорте для новичков, любителей и профессионалов.
-          a href='#'
+          a href='#contacts'
             | Контакты и информация для партнеров
             i.fa.fa-angle-down
       .about
@@ -40,22 +40,19 @@ html
           h1 О телеканале
           p Скромно и по делу
           .row
-            .col-md-5.col-sm-12.d-flex.align-items-center
+            .col-md-6.col-sm-12.d-flex.align-items-center
               div
                 img src='horn.png'
               p.left Освещение наиболее значимых событий в индустрии
-            .col-2.d-none.d-md-block
-              .line
-            .col-md-5.col-sm-12.d-flex.align-items-center
+            .col-md-6.col-sm-12.d-flex.align-items-center
               p.right 70% эфирного времени — собственный уникальный контент
               div
                 img src='camera.png'
-            .col-md-5.col-sm-12.d-flex.align-items-center
+            .col-md-6.col-sm-12.d-flex.align-items-center
               div
                 img src='live.png'
               p.left Прямые трансляции популярных киберспортивных турниров
-            .col-2.d-none.d-md-block
-            .col-md-5.col-sm-12.d-flex.align-items-center
+            .col-md-6.col-sm-12.d-flex.align-items-center
               p.right Более 3000 премьерных часов в год
               div
                 img src='tv.png'
@@ -88,3 +85,42 @@ html
               .text
                 h2 Гаджетотека
                 p Только из «Гаджетотеки» вы узнаете о последних релизах на рынке гаджетов и девайсов для геймеров и не только. Детальный разбор основных характеристик и тест-драйв ноутбуков, мониторов, клавиатур, мышек, джойстиков, наушников — всего того, что не только пригодится в игре, но и будет радовать прихотливый глаз геймера.
+      .contacts#contacts
+        .container
+          h1 Партнерам
+          p Различные полезные контакты
+          img src='contacts_logo.png'
+          .row
+            .col-4
+              .pull-left
+                img src='etv.png'
+              p 125493, г. Москва, ул. Смольная 12,<br>этаж 3, помещение 53
+              a [href='#' class='mail' onclick='email(this)'
+                 data-name='info' data-domain='etv-media' data-tld='ru']
+            .col-4
+              .pull-left
+                img src='distributor.png'
+              p Официальный дистрибьютор:<br>СИГНАЛ МЕДИА (ООО «Сигнал»)
+              a [href='#' class='mail' onclick='email(this)'
+                 data-name='contact' data-domain='signalmedia' data-tld='ru']
+            .col-4
+              .pull-left
+                img src='toot.png'
+              p По вопросам размещения<br>рекламы
+              a [href='#' class='mail' onclick='email(this)'
+                 data-name='adv' data-domain='etv-media' data-tld='ru']
+      .footer
+        img src='logo.png'
+        a href='https://vk.com/channel_etv' target='blank'
+          i.fa.fa-vk
+        a href='https://www.instagram.com/channel_etv' target='blank'
+          i.fa.fa-instagram
+        a href='https://www.youtube.com/user/gsstudiotv' target='blank'
+          i.fa.fa-youtube-play
+        a href='https://ok.ru/channeletv' target='blank'
+          i.fa.fa-odnoklassniki.fa-lg
+
+javascript:
+  function email(a) {
+    a.href = 'mailto:' + a.dataset.name + '@' + a.dataset.domain + '.' + a.dataset.tld;
+  }
